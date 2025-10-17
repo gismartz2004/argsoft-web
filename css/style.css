@@ -1,0 +1,695 @@
+/* ================== VARIABLES DE TEMA ================== */
+:root {
+  --bg: #ffffff;
+  --text: #1c0081;
+  --card-bg: #f8f9fa;
+  --accent: #0077ff;
+  --border: #e0e0e0;
+  --header-height: 80px;
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f12;
+  --text: #e6e6e6;
+  --card-bg: #1a1a1f;
+  --accent: #00f0ff;
+  --border: #333;
+}
+
+[data-theme="futuristic"] {
+  --bg: #03040a;
+  --text: #d0f0ff;
+  --card-bg: rgba(10, 15, 30, 0.7);
+  --accent: #00f0ff;
+  --border: rgba(0, 240, 255, 0.2);
+}
+
+/* ================== RESET Y BASE ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s, color 0.4s;
+  padding-top: var(--header-height);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* ================== FONDO DE PARTÍCULAS ================== */
+#particles-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ================== HEADER Y NAVEGACIÓN ================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: rgba(10, 10, 12, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, var(--accent), #b027ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* ================== HERO ================== */
+.hero {
+  padding: 6rem 0 8rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.8rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, var(--accent), #b027ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ================== SECCIONES GENERALES ================== */
+.section {
+  padding: 6rem 0;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: 2px;
+}
+
+/* Texto centrado con buen ancho de lectura */
+.content-box {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  line-height: 1.8;
+  font-size: 1.12rem;
+  text-align: center;
+}
+
+.content-box strong {
+  color: var(--accent);
+}
+
+/* ================== SECCIÓN ORIGEN ================== */
+.origen-text {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* ================== SECCIÓN TECNOLOGÍA ================== */
+#tecnologia .container {
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.tech-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="futuristic"] .tech-card {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.1);
+  border-color: rgba(0, 240, 255, 0.15);
+}
+
+.tech-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="futuristic"] .tech-card:hover {
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.25);
+}
+
+.tech-icon {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+  line-height: 1;
+}
+
+.tech-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.tech-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* ================== SECCIÓN CLIENTES ================== */
+#clientes .container {
+  text-align: center;
+}
+
+.clientes-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin: 3.5rem auto 2.5rem;
+  max-width: 900px;
+}
+
+.cliente {
+  width: 220px;
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.cliente:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="futuristic"] .cliente:hover {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.25);
+}
+
+.cliente-logo {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.03);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cliente-logo img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.btn-ver-mas {
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--accent);
+  color: #000;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.btn-ver-mas:hover {
+  opacity: 0.9;
+}
+
+.patrocinadores-box {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.patrocinadores-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+  opacity: 0.9;
+  font-style: italic;
+}
+
+[data-theme="futuristic"] .patrocinadores-box p {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* ================== SECCIÓN EDUCACIÓN ================== */
+#educacion .container {
+  text-align: center;
+}
+
+.fases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.fase-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2.4rem 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="futuristic"] .fase-card {
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.1);
+  border-color: rgba(0, 240, 255, 0.15);
+}
+
+.fase-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="futuristic"] .fase-card:hover {
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.25);
+}
+
+.fase-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--accent);
+  color: #000;
+  border-radius: 50%;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin: 0 auto 1.4rem;
+  box-shadow: 0 4px 12px rgba(0, 240, 255, 0.3);
+}
+
+.fase-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.fase-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* ================== SECCIÓN CONTACTO ================== */
+#contacto .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2.8rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1.1rem;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.2);
+}
+
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form .btn-primary {
+  margin-top: 0.5rem;
+  padding: 1rem 2.4rem;
+  font-size: 1.05rem;
+  letter-spacing: 1.2px;
+}
+
+[data-theme="futuristic"] .form-group input:focus,
+[data-theme="futuristic"] .form-group textarea:focus {
+  box-shadow: 0 0 0 3px rgba(0, 240, 255, 0.4);
+  border-color: var(--accent);
+}
+
+[data-theme="futuristic"] .form-group input::placeholder,
+[data-theme="futuristic"] .form-group textarea::placeholder {
+  color: rgba(208, 240, 255, 0.6);
+}
+
+/* ================== BOTÓN PRIMARIO ================== */
+.btn-primary {
+  display: inline-block;
+  background: var(--accent);
+  color: #000;
+  padding: 0.9rem 2.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
+
+/* ================== MODAL (POPUP CLIENTES) ================== */
+/* --- MODAL MEJORADO --- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  background: var(--card-bg);
+  margin: 5% auto; /* Más centrado verticalmente */
+  padding: 2.8rem;
+  width: 95%;
+  max-width: 750px; /* Más ancho */
+  max-height: 1800px;
+  border-radius: 24px;
+  position: relative;
+  border: 1px solid var(--border);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Logo dentro del modal */
+.modal-logo {
+  width: 100px;
+  height: 120px;
+  margin: 0 auto 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+}
+
+.modal-logo .cliente-logo {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+/* Si usas imágenes en el modal */
+.modal-logo img {
+  max-width: 85%;
+  max-height: 110%;
+  
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text);
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 10;
+}
+
+.close-btn:hover {
+  color: var(--accent);
+}
+
+.modal-content h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 1.8rem;
+  line-height: 1.8;
+  opacity: 0.95;
+  text-align: center;
+}
+
+.btn-link {
+  display: inline-block;
+  background: var(--accent);
+  color: #000;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 14px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  margin-top: 0.5rem;
+  transition: opacity 0.3s;
+}
+
+.btn-link:hover {
+  opacity: 0.9;
+}
+
+/* Responsive modal */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 2rem;
+    margin: 8% auto;
+  }
+  .modal-logo {
+    width: 100px;
+    height: 100px;
+  }
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================== FOOTER ================== */
+.footer {
+  text-align: center;
+  padding: 2.5rem 0;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+/* ================== SELECTOR DE TEMA ================== */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  display: flex;
+  gap: 8px;
+}
+
+.theme-toggle button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================== ANIMACIONES ================== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  :root { --header-height: 70px; }
+  .hero h1 { font-size: 2.6rem; }
+  .container { padding: 0 1rem; }
+  .nav ul { gap: 1.2rem; font-size: 0.9rem; }
+  h2 { font-size: 2rem; }
+  .content-box { padding: 0 1rem; }
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 1.8rem;
+    margin: 15% auto;
+  }
+  .tech-grid,
+  .fases-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Estilo para botón de calendario --- */
+.btn-calendar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 1.1rem 2.6rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+}
+
+.contact-note {
+  margin-top: 2rem;
+  font-size: 1rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+  font-style: italic;
+}
