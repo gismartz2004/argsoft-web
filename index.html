@@ -3,281 +3,349 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="A.R.G.S.O.F.T. — Operaciones de software ágiles, en tiempo real y globales para la transformación." />
-  <title>A.R.G.S.O.F.T. | Agile Real-time Global Software Operations For Transformation</title>
+  <meta name="description" content="ARGSOFT - Plataforma Educativa Integral SaaS para el desarrollo de la lógica computacional" />
+  <title>ARGSOFT | Plataforma Educativa Integral SaaS</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
   <!-- Fondo de partículas 2D -->
   <canvas id="particles-canvas"></canvas>
 
-  <!-- Selector de tema -->
-  <div class="theme-toggle">
-    <button data-theme="light" title="Modo Claro">☀️</button>
-    <button data-theme="dark" title="Modo Oscuro">🌙</button>
-    <button data-theme="futuristic" title="Modo Futurista">🌀</button>
-  </div>
-
-  <!-- Navbar fijo, sin tapar contenido -->
+  <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="logo">
-        <span class="logo-text">A.R.G.S.O.F.T.</span>
+        <span class="logo-text">ARGSOFT</span>
       </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#origen">Origen</a></li>
-          <li><a href="#vision">Visión</a></li>
-          <li><a href="#tecnologia">Tecnología</a></li>
 
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#educacion">Plataforma</a></li>
-          <li><a href="#contacto">Contacto</li>
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Menú de navegación -->
+      <nav class="nav" id="main-nav">
+        <ul>
+          <li><a href="#negocio">Negocio</a></li>
+          <li><a href="#productos">Plataforma</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#contacto" class="btn-nav">Solicitar Demo</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="main-content">
-    <!-- Hero corregido: ahora comienza debajo del navbar -->
+    <!-- Hero Section -->
     <section class="hero fade-section" id="hero">
       <div class="container">
-        <h1>Agile.<br>Real-time.<br>Global.<br><span>For Transformation.</span></h1>
-        <p>Operaciones de software que trascienden límites técnicos, geográficos y temporales.</p>
-        <a href="#contacto" class="btn-primary">Invierte en la transformación</a>
-      </div>
+        <h1>
+          <span class="line1">El futuro se construye</span>
+          <span class="line2">desde las aulas:</span>
+          <span class="line3">Lógica Computacional</span>
+          <span class="line4">para todos.</span>
+        </h1>
+        <p>ARGSOFT es la plataforma educativa integral que guía a niños y jóvenes en su aprendizaje autónomo de <strong>lógica, pensamiento algorítmico y resolución de problemas reales.</strong></p>
+        
+        <div class="hero-buttons">
+  <a href="https://api.whatsapp.com/send?phone=593986789714&text=Hola,%20me%20interesa%20solicitar%20una%20demo%20gratuita%20de%20ARGSOFT" 
+     class="btn-primary" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    Solicitar Demo Gratuita
+  </a>
+  <a href="https://geniosbot.com/geniosacademy/" 
+     class="btn-primary" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    Ver la Plataforma
+  </a>
+</div>
+    </div>
     </section>
 
-    <!-- NUEVA SECCIÓN: Origen -->
-    <section id="origen" class="section fade-section">
+    <!-- Descripción del Negocio -->
+    <section id="negocio" class="section fade-section">
       <div class="container">
-        <h2>Origen</h2>
-        <div class="origen-text">
-          <p>
-            A.R.G.S.O.F.T. nació de la visión de un joven que entendió una verdad simple pero profunda: 
-            <strong>el mundo debía avanzar, digitalizarse y potenciar las habilidades humanas, no reemplazarlas</strong>.
-          </p>
-          <p>
-            Nació también de una pregunta urgente: <em>¿qué pasaría si canalizamos las energías renovables no solo para alimentar máquinas, 
-            sino para impulsar una nueva era de innovación consciente?</em>
-          </p>
-          <p>
-            Y nació, sobre todo, de un principio de vida: <strong>para que los humanos lleguen más lejos, 
-            deben aprender a soltar algo… a dejar atrás lo que ya no sirve</strong>. 
-            En A.R.G.S.O.F.T., transformamos esa filosofía en código, circuitos y operaciones globales.
-          </p>
+        <h2>ARGSOFT: Tecnología Educativa (EdTech) 100% SaaS</h2>
+        <p class="section-subtitle">Como una startup tecnológica nativa digital, resolvemos tres barreras críticas mediante software y cloud computing.</p>
+
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-icon">📚</div>
+            <h3>Optimización Pedagógica con Software</h3>
+            <p>Proveemos <strong>rutas de aprendizaje estructuradas</strong> y herramientas de calificación automáticas. El docente no necesita ser un experto en programación para guiar a sus estudiantes.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon">💻</div>
+            <h3>Plataforma 100% Virtual y Cloud</h3>
+            <p>Nuestro <strong>Editor + Simulador</strong> virtual minimiza la inversión en hardware. Los estudiantes practican robótica y electrónica sin componentes físicos costosos.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon">🤖</div>
+            <h3>Adaptación y Feedback en Tiempo Real (AI)</h3>
+            <p>El <strong>Asistente con IA</strong> ofrece retroalimentación contextual, personalizada e inmediata, evitando la frustración y adaptando el contenido al ritmo de cada alumno.</p>
+          </div>
+        </div>
+
+        <div class="content-box target-audience">
+          <h3>Público Objetivo</h3>
+          <p>Clientes: <strong>Instituciones educativas</strong> de nivel primario y secundario (8 a 18 años). Usuarios: Estudiantes y Docentes de STEM.</p>
         </div>
       </div>
     </section>
 
-   <section id="vision" class="section fade-section">
-      <div class="container">
-        <h2>Visión</h2>
-      <div class="content-box"> 
-        <p>En ARG buscamos ser una startup referente en el desarrollo de software a medida, 
-          adaptándonos a las necesidades de cada cliente. 
-          </p>
-        <p>Contamos con un equipo con experiencia en diversas industrias, 
-          especialmente en soluciones comerciales, administrativas, educativas 
-          y de e-commerce. Nuestra visión es integrar tecnología, software y robótica para impulsar la innovación y la 
-          transformación digital en cada proyecto.</p>
+ <!-- Productos / Plataforma -->
+<section id="productos" class="section fade-section bg-dark">
+  <div class="container">
+    <h2>Nuestra Plataforma SaaS: Módulos Clave</h2>
+
+    <!-- Módulo 1 -->
+    <div class="product-module">
+      <div class="module-content">
+        <div class="module-text">
+          <h3>1. Gestión Académica</h3>
+          <p>Docentes suben contenidos, asignan actividades y califican de forma ágil. Los estudiantes acceden a rutas de aprendizaje estructuradas y personalizadas.</p>
+          <ul>
+            <li>Rutas de aprendizaje personalizadas.</li>
+            <li>Calificación automática de ejercicios.</li>
+            <li>Reportes de progreso en tiempo real.</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="visual-container" onclick="openModal('modal1')">
+            <img src="./img/Sin título (11).png" 
+                 alt="Dashboard de Gestión Académica" 
+                 class="module-image"
+                 loading="lazy">
+            <div class="image-label">
+              <i data-lucide="layout-dashboard" class="label-icon"></i>
+              <span>Interfaz de Gestión Académica</span>
+              <small>Haz clic para ampliar</small>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <!-- Módulo 2 -->
+    <div class="product-module reverse">
+      <div class="module-content">
+        <div class="module-text">
+          <h3>2. Editor + Simulador (MVP)</h3>
+          <p>Entorno seguro basado en la nube para programar, depurar y simular proyectos en tiempo real. Ideal para aprender electrónica, robótica o lógica de sistemas sin hardware físico.</p>
+          <p class="module-tag">Etapa de Desarrollo: MVP Funcional con +100 ejercicios de simulación.</p>
+        </div>
+        <div class="module-visual">
+          <div class="visual-container" onclick="openModal('modal2')">
+            <img src="./img/practica imagen.png" 
+                 alt="Editor y Simulador de Código" 
+                 class="module-image"
+                 loading="lazy">
+            <div class="image-label">
+              <i data-lucide="monitor-dot" class="label-icon"></i>
+              <span>Entorno de Programación Cloud</span>
+              <small>Haz clic para ampliar</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Módulo 3 -->
+    <div class="product-module">
+      <div class="module-content">
+        <div class="module-text">
+          <h3>3. Asistente con IA (Tutor Virtual)</h3>
+          <p>Un tutor virtual inteligente guía al estudiante con retroalimentación contextual, detecta errores conceptuales y adapta el contenido según su progreso.</p>
+          <ul>
+            <li>Feedback instantáneo sobre el código.</li>
+            <li>Detección de errores conceptuales profundos.</li>
+            <li>Adaptación de la dificultad del currículo.</li>
+          </ul>
+        </div>
+        <div class="module-visual">
+          <div class="visual-container" onclick="openModal('modal3')">
+            <img src="./img/Captura de pantalla 2025-11-08 215314.png" 
+                 alt="Asistente de IA y Chatbot" 
+                 class="module-image"
+                 loading="lazy">
+            <div class="image-label">
+              <i data-lucide="messages-square" class="label-icon"></i>
+              <span>Motor de Inteligencia Artificial</span>
+              <small>Haz clic para ampliar</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modales para imágenes ampliadas -->
+<div id="modal1" class="image-modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+    <img src="./img/Sin título (11).png" alt="Dashboard de Gestión Académica" class="modal-image">
+    <div class="modal-caption">
+      <h4>Interfaz de Gestión Académica</h4>
+      <p>Dashboard completo para administración de cursos y estudiantes</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal2" class="image-modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+    <img src="./img/practica imagen.png" alt="Editor y Simulador de Código" class="modal-image">
+    <div class="modal-caption">
+      <h4>Entorno de Programación Cloud</h4>
+      <p>Editor integrado con simulador para prácticas de programación</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal3" class="image-modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+    <img src="./img/Captura de pantalla 2025-11-08 215314.png" alt="Asistente de IA y Chatbot" class="modal-image">
+    <div class="modal-caption">
+      <h4>Motor de Inteligencia Artificial</h4>
+      <p>Asistente virtual para tutoría personalizada</p>
+    </div>
+  </div>
+</div>
+
+<!-- Logos y Aliados -->
+<section id="aliados" class="section fade-section">
+  <div class="container">
+    <h2>Nuestros Aliados Estratégicos</h2>
+    <p class="section-subtitle">Colaboramos con instituciones y organizaciones comprometidas con la innovación educativa</p>
+
+    <div class="aliados-grid">
+      <div class="aliado-card">
+        <div class="aliado-logo">
+          <img src="./img/fundacionpro.png" alt="Fundación Provida" />
+        </div>
+        <h4>Fundación Provida</h4>
+        <p>Fundación aliada que impulsa y apoya ideas tecnológicas con fines sociales</p>
+      </div>
+
+      <div class="aliado-card">
+        <div class="aliado-logo">
+          <img src="./img/logo-6 (1).png" alt="Centro de Innovación tecnológica Genios Bot" />
+        </div>
+        <h4>Centro de Innovación tecnológica Genios Bot</h4>
+        <p>Partner que impulsa proyectos de innovación tecnológica</p>
+      </div>
+
+      <div class="aliado-card">
+        <div class="aliado-logo">
+          <img src="./img/Logo-120-por-120.webp" alt="Unidad Educativa Sathya Sai de Guayaquil" />
+        </div>
+        <h4>Unidad Educativa Sathya Sai de Guayaquil</h4>
+        <p>Aliado educativo pionero en la implementación de nuestra plataforma</p>
+      </div>
+    </div>
+
+    <div class="aliados-cta">
+      <p>¿Quieres ser nuestro aliado?</p>
+      <a href="#contacto" class="btn-secondary">Trabajemos Juntos</a>
+    </div>
+  </div>
+</section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="section fade-section">
+      <div class="container">
+        <h2>Nuestro Equipo</h2>
+        <p class="section-subtitle">Un equipo multidisciplinario con experiencia en EdTech, Desarrollo de Software y Pedagogía.</p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="img/equipo1.jpeg" alt="Juan Pérez" />
+            </div>
+            <h3>Gismar Toala</h3>
+            <p class="team-role">CEO / Fundador</p>
+            <p>Líder con +3 años en tecnología educativa. Experto en alianzas estratégicas y visión de producto.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="./img/lider3.jpeg" alt="" />
+            </div>
+            <h3>Emerson Cajape</h3>
+            <p class="team-role">COO</p>
+            <p>Lider en Desarrollo de Software, arquitecto de la IA y en motor de simulación. Especialista en escalabilidad.</p>
+          </div>
+
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="./img/lider2.png" alt="Carlos Díaz" />
+            </div>
+            <h3>Miguel León</h3>
+            <p class="team-role">Líder Pedagógico</p>
+            <p>Ex-docente y director. Diseñador del currículo de lógica y pensamiento computacional adaptado.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-<section id="tecnologia" class="section fade-section">
-  <div class="container">
-    <h2>Pilares Tecnológicos</h2>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <div class="tech-icon">⚡</div>
-        <h3>Agile Software</h3>
-        <p>Arquitecturas modulares, adaptables y evolutivas para entornos cambiantes.</p>
+
+
+    <!-- Contacto -->
+    <section id="contacto" class="section fade-section contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <h2>¿Listo para transformar el aprendizaje en tu institución?</h2>
+          <p class="contact-subtitle">
+            Agenda una demostración personalizada de ARGSOFT y explora el futuro del pensamiento algorítmico.
+          </p>
+          <a href="https://calendar.app.google/jXxxRK87czXrQv4R7" target="_blank" rel="noopener noreferrer" class="btn-primary btn-large">
+            💬 ¡Hablemos Ahora!
+          </a>
+        </div>
       </div>
-      <div class="tech-card">
-        <div class="tech-icon">⏱️</div>
-        <h3>Real-time Processing</h3>
-        <p>Procesamiento de datos con latencia mínima para decisiones instantáneas.</p>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🌐</div>
-        <h3>Global Operations</h3>
-        <p>Infraestructura distribuida sin fronteras, operando 24/7 en cualquier latitud.</p>
-      </div>
-      <div class="tech-card">
-        <div class="tech-icon">🚀</div>
-        <h3>For Transformation</h3>
-        <p>Integración con disciplinas emergentes para redefinir lo técnicamente posible.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-  <section id="clientes" class="section fade-section">
-  <div class="container">
-    <h2>Clientes y Aliados</h2>
-    <div class="clientes-grid">
-      <!-- Cliente 1 -->
-      <div class="cliente" data-url="https://cliente1.com" data-modal="modal1">
-        <img src="img/Untitled-removebg-preview.png" alt="Cliente 1">
-        <button class="btn-ver-mas" aria-label="Ver más">Ver más</button>
-      </div>
-
-      <!-- Cliente 2 -->
-      <div class="cliente" data-url="https://cliente2.com" data-modal="modal2">
-        <img src="img/Logo-120-por-120.webp" alt="Cliente 2">
-        <button class="btn-ver-mas" aria-label="Ver más">Ver más</button>
-      </div>
-
-      <!-- Cliente 3 -->
-      <div class="cliente" data-url="https://cliente3.com" data-modal="modal3">
-        <img src="img/dliozbakery.webp" alt="Cliente 3">
-        <button class="btn-ver-mas" aria-label="Ver más">Ver más</button>
-      </div>
-    </div>
-
-    <div class="patrocinadores-box">
-      <p>Con el respaldo de nuevos patrocinadores comprometidos con la innovación disruptiva.</p>
-    </div>
-  </div>
-
-  <!-- Modales (popups) -->
- <!-- Modales (popups) -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <div class="modal-logo">
-      <img src="img/perfumeriasz.jpg" alt="Cliente 1">
-    </div>
-    <h3>Plataforma de Gestión Comercial</h3>
-    <p>Desarrollamos una plataforma de gestión comercial completa que optimizó los procesos logísticos de la empresa en un 40%, gracias a la automatización, la integración con dispositivos IoT y la generación de reportes en tiempo real.
-
-El sistema incluye un e-commerce totalmente integrado con el área administrativa, permitiendo la gestión centralizada de pedidos, productos, guías de despacho y recargos, tanto con como sin cargos adicionales.
-
-Desde un panel administrativo intuitivo, los usuarios pueden:
-
-Gestionar inventarios y actualizaciones de stock en tiempo real.
-
-Visualizar reportes de ventas, rendimiento logístico y estado de pedidos.
-
-Controlar el flujo completo desde la venta online hasta la entrega final.
-
-Integrar sensores IoT para monitorear el estado y ubicación de los productos durante el transporte.
-
-Configurar reglas de recargo automático según zonas, peso o tipo de envío.
-
-Esta solución permitió una mayor trazabilidad, eficiencia operativa y control logístico, fortaleciendo la toma de decisiones y mejorando significativamente la experiencia tanto del cliente como del equipo interno..</p>
-    <a href="http://194.140.198.128:3001/es" target="_blank" class="btn-link">Visitar sitio</a>
-  </div>
-</div>
-
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <div class="modal-logo">
-      <img src="img/Logo-120-por-120.webp" alt="Cliente 2">
-    </div>
-    <h3>Plataforma Digital Educativa y Comunidad Interactiva</h3>
-    <p>Desarrollamos un website institucional para una unidad educativa, diseñado como un espacio digital integral que promueve la comunicación, la participación y la gestión de contenidos dentro de la comunidad académica.
-
-El sistema incluye un repositorio de noticias y recursos, donde docentes y administradores pueden publicar y actualizar información de manera dinámica, manteniendo a estudiantes y padres siempre informados.
-
-Además, la plataforma incorpora un calendario de eventos interactivo, que permite visualizar actividades académicas, proyectos, reuniones y eventos escolares en tiempo real, con notificaciones y recordatorios automáticos.
-
-La sección de comunidad fomenta la colaboración entre alumnos, docentes y padres, ofreciendo espacios para compartir proyectos, comentarios y publicaciones destacadas.
-
-Con una interfaz moderna, adaptable y fácil de usar, esta solución fortalece la gestión institucional, impulsa la participación de la comunidad educativa y mejora la comunicación entre todos los actores del entorno escolar.</p>
-    <a href="https://cliente2.com" target="_blank" class="btn-link">Visitar sitio</a>
-  </div>
-</div>
-
-<div id="modal3" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <div class="modal-logo">
-      <img src="img/dliozbakery.webp" alt="Cliente 3">
-    </div>
-    <h3>E-Commerce con Panel Administrativo y Control de Pagos</h3>
-    <p>Desarrollamos un e-commerce completo con un panel administrativo avanzado, diseñado para ofrecer una gestión centralizada de ventas, pedidos y pagos en línea.
-
-El sistema permite administrar de forma eficiente todo el flujo comercial:
-
-Gestión de pedidos: control en tiempo real del estado de cada compra, desde la recepción hasta la entrega.
-
-Administración de productos: carga, actualización y categorización sencilla de artículos, con seguimiento de inventario.
-
-Contabilidad básica integrada: registro automático de transacciones, control de ingresos por ventas y conciliación de pagos en línea.
-
-Reportes dinámicos: visualización de métricas clave como ventas diarias, métodos de pago y rendimiento de productos.
-
-Panel de administración intuitivo: interfaz moderna que facilita la toma de decisiones y mejora la productividad del equipo.
-
-Esta solución brinda una experiencia de compra fluida para los usuarios finales y un control total de la operación comercial para los administradores, combinando eficiencia, seguridad y escalabilidad.</p>
-    <a href="https://dliozbakery.com" target="_blank" class="btn-link">Visitar sitio</a>
-  </div>
-</div>
-
-<!-- Sección Herramienta Educativa -->
-<section id="educacion" class="section fade-section">
-  <div class="container">
-    <h2>Herramienta Educativa</h2>
-    <div class="content-box">
-      <p>
-        En A.R.G.S.O.F.T., creemos que el futuro se construye desde las aulas. Por eso desarrollamos una 
-        <strong>plataforma educativa integral</strong> diseñada para instituciones escolares, que guía a niños y jóvenes 
-        en su aprendizaje autónomo de lógica computacional, pensamiento algorítmico y resolución de problemas reales.
-      </p>
-    </div>
-
-    <div class="fases-grid">
-      <div class="fase-card">
-        <div class="fase-number">1</div>
-        <h3>Gestión Académica</h3>
-        <p>Docentes suben contenidos, asignan actividades y califican de forma ágil. Los estudiantes acceden a rutas de aprendizaje estructuradas y personalizadas.</p>
-      </div>
-      <div class="fase-card">
-        <div class="fase-number">2</div>
-        <h3>Editor + Simulador</h3>
-        <p>Entorno seguro para programar, depurar y simular proyectos en tiempo real. Ideal para aprender electrónica, robótica o lógica de sistemas sin hardware físico.</p>
-      </div>
-      <div class="fase-card">
-        <div class="fase-number">3</div>
-        <h3>Asistente con IA</h3>
-        <p>Un tutor virtual inteligente guía al estudiante con retroalimentación contextual, detecta errores conceptuales y adapta el contenido según su progreso.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contacto" class="section fade-section">
-  <div class="container">
-    <div class="contact-content">
-      <h2>Agenda una Reunión</h2>
-      <p class="contact-subtitle">
-        ¿Listo para construir el futuro con nosotros? Agenda una llamada estratégica en minutos.
-      </p>
-      <a
-        href="https://calendar.app.google/6P5xGqudHPvdi9hWA"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-primary btn-calendar"
-      >
-        🗓️ Agendar cita en Google Calendar
-      </a>
-      <p class="contact-note">
-        Preferimos conversar en vivo para entender mejor tu visión y cómo A.R.G.S.O.F.T. puede potenciarla.
-      </p>
-    </div>
-  </div>
-</section>
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 A.R.G.S.O.F.T. — Agile Real-time Global Software Operations For Transformation</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>ARGSOFT</h3>
+          <p>Plataforma integral SaaS para el desarrollo de la lógica computacional.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Información</h4>
+          <ul>
+            <li><a href="#negocio">Descripción del Negocio (SaaS)</a></li>
+            <li><a href="#productos">Plataforma (MVP)</a></li>
+            <li><a href="#equipo">Nuestro Equipo</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Email: gismartoala@argsoft.tech</p>
+          <p>Tel: +593 98 678 9714</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ARGSOFT. Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Inicializar iconos de Lucide
+    lucide.createIcons();
+  </script>
 </body>
 </html>

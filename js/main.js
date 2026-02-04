@@ -126,3 +126,70 @@ window.addEventListener('click', (e) => {
     e.target.style.display = 'none';
   }
 });
+
+// ====== Menú responsive ======
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('main-nav');
+
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer clic en un enlace (móvil)
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        menuToggle.classList.remove('active');
+      });
+    });
+  }
+});
+// Funciones para los modales de imágenes
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = 'flex';
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Prevenir scroll
+  }
+}
+
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+    modal.style.display = 'none';
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto'; // Restaurar scroll
+  }
+}
+
+// Cerrar modal al hacer clic fuera de la imagen
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('image-modal')) {
+    e.target.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const modals = document.querySelectorAll('.image-modal');
+    modals.forEach(modal => {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    });
+  }
+});
+
+// Inicializar modales en DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+  // También puedes añadir eventos de clic aquí si prefieres
+  const visualContainers = document.querySelectorAll('.visual-container');
+  visualContainers.forEach(container => {
+    container.style.cursor = 'pointer';
+  });
+});
