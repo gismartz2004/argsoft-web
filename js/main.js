@@ -1,8 +1,12 @@
 // ========== Partículas 2D ligero ==========
 const canvas = document.getElementById('particles-canvas');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const ctx = canvas ? canvas.getContext('2d') : null;
+
+// Solo inicializar si el canvas existe y es visible
+if (canvas && canvas.style.display !== 'none') {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
 
 let particlesArray = [];
 const particleCount = 80;
@@ -81,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
@@ -167,7 +171,7 @@ function closeModal(modalId) {
 }
 
 // Cerrar modal al hacer clic fuera de la imagen
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
   if (e.target.classList.contains('image-modal')) {
     e.target.style.display = 'none';
     document.body.style.overflow = 'auto';
@@ -175,7 +179,7 @@ document.addEventListener('click', function(e) {
 });
 
 // Cerrar modal con tecla Escape
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
     const modals = document.querySelectorAll('.image-modal');
     modals.forEach(modal => {
@@ -186,7 +190,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 // Inicializar modales en DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // También puedes añadir eventos de clic aquí si prefieres
   const visualContainers = document.querySelectorAll('.visual-container');
   visualContainers.forEach(container => {
