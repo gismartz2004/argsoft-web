@@ -169,14 +169,37 @@ body {
 
 .fade-section {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(40px) scale(0.98);
+  transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1), transform 1.5s cubic-bezier(0.4, 0, 0.2, 1), background 1s ease;
   will-change: opacity, transform;
 }
 
 .fade-section.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
+}
+
+/* Holographic effect */
+.holographic-text {
+  background: linear-gradient(90deg, #fff, #00f0ff, #fff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: holo-shine 4s linear infinite;
+}
+
+@keyframes holo-shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.hero .line1,
+.hero .line2,
+.hero .line3,
+.hero .line4 {
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.4), 0 0 40px rgba(0, 240, 255, 0.2);
 }
 
 /* Hero section */
@@ -1474,4 +1497,15 @@ h2 {
   .aliados-cta {
     padding: 20px;
   }
+}
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--gradient-secondary);
+  z-index: 2000;
+  box-shadow: var(--shadow-glow);
 }

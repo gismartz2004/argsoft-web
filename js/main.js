@@ -83,6 +83,17 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(section);
   });
 
+  // ========== Barra de progreso de scroll ==========
+  const scrollBar = document.getElementById('scroll-bar');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement,
+      b = document.body,
+      st = 'scrollTop',
+      sh = 'scrollHeight';
+    const percent = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100);
+    if (scrollBar) scrollBar.style.width = percent + '%';
+  });
+
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
