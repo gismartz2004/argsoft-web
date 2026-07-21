@@ -16,10 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // - Guardar en base de datos
     // - Enviar a CRM (como HubSpot, etc.)
 
-    $to = "tu-email@tudominio.com"; // ¡Cambia esto!
-    $subject = "Nuevo mensaje de contacto - Tu Startup";
+    $to = "gismartoala@argsoft.tech";
+    $subject = "Nuevo mensaje de contacto - ARGSOFT";
     $body = "Nombre: $nombre\nEmail: $email\nMensaje:\n$mensaje";
-    $headers = "From: web@tudominio.com";
+    $headers = "From: contacto@argsoft.tech";
 
     if (mail($to, $subject, $body, $headers)) {
         echo "Mensaje enviado. ¡Gracias!";
