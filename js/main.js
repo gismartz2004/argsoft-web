@@ -50,13 +50,18 @@ function animateParticles() {
 }
 
 window.addEventListener('resize', () => {
+  if (!canvas || canvas.style.display === 'none') return;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   initParticles();
 });
 
-initParticles();
-animateParticles();
+// Solo animar si el canvas 2D esta realmente visible: en la home esta oculto
+// y el bucle de requestAnimationFrame consumia CPU sin dibujar nada.
+if (canvas && ctx && canvas.style.display !== 'none') {
+  initParticles();
+  animateParticles();
+}
 
 // ========== Gestión de temas ==========
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,436 @@
+/* ==========================================================================
+   Sistema visual de ZENTRALL
+   Paleta oficial del isotipo (docs/zentrall-identidad-marca.md del producto).
+   Se usa SOLO en las zonas de producto para que Zentrall se lea como un
+   producto contratable y no como una sección más de ARGSOFT.
+   ========================================================================== */
+
+:root {
+  --z-violeta: #6C5CE7;
+  --z-violeta-oscuro: #5243c2;
+  --z-indigo: #4B5BD8;
+  --z-azul: #2D8CFF;
+  --z-turquesa: #00C2A8;
+  --z-naranja: #FF9A00;
+  --z-rosa: #FF4D9D;
+
+  --z-texto: #1e1b33;
+  --z-texto-suave: #55506e;
+  --z-borde: rgba(108, 92, 231, 0.16);
+  --z-superficie: #ffffff;
+  --z-superficie-suave: #f7f5ff;
+  --z-gradiente: linear-gradient(135deg, var(--z-rosa), var(--z-naranja) 18%, var(--z-violeta) 55%, var(--z-indigo) 78%, var(--z-azul));
+  --z-sombra: 0 12px 34px rgba(75, 91, 216, 0.12);
+  --z-radio: 16px;
+}
+
+/* ---------- Franja de producto ---------- */
+.z-zone {
+  background: linear-gradient(180deg, #ffffff 0%, var(--z-superficie-suave) 45%, #ffffff 100%);
+  color: var(--z-texto);
+  padding: 90px 0;
+  position: relative;
+}
+
+.z-zone .container { position: relative; z-index: 2; }
+
+.z-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--z-violeta);
+  background: rgba(108, 92, 231, 0.08);
+  border: 1px solid var(--z-borde);
+  border-radius: 999px;
+  padding: 7px 16px;
+  margin-bottom: 20px;
+}
+
+.z-eyebrow::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--z-turquesa);
+}
+
+.z-zone h2,
+.z-zone h3,
+.z-zone h4 { color: var(--z-texto); }
+
+.z-zone h2 {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  line-height: 1.18;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.z-lead {
+  font-size: 1.08rem;
+  color: var(--z-texto-suave);
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.z-wordmark {
+  background: var(--z-gradiente);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* ---------- Botones de producto ---------- */
+.z-btn,
+.z-btn-ghost {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.z-btn {
+  background: var(--z-violeta);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(108, 92, 231, 0.28);
+}
+
+.z-btn:hover {
+  background: var(--z-violeta-oscuro);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(108, 92, 231, 0.34);
+  color: #fff;
+}
+
+.z-btn-ghost {
+  background: transparent;
+  color: var(--z-indigo);
+  border: 1.5px solid var(--z-indigo);
+}
+
+.z-btn-ghost:hover {
+  background: rgba(75, 91, 216, 0.07);
+  transform: translateY(-2px);
+  color: var(--z-indigo);
+}
+
+.z-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.z-nota {
+  font-size: 0.92rem;
+  color: var(--z-texto-suave);
+  margin-top: 16px;
+}
+
+/* ---------- Grilla de módulos ---------- */
+.z-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.z-card {
+  background: var(--z-superficie);
+  border: 1px solid var(--z-borde);
+  border-radius: var(--z-radio);
+  padding: 26px 24px;
+  box-shadow: var(--z-sombra);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.z-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 3px;
+  background: var(--z-gradiente);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+
+.z-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(108, 92, 231, 0.34);
+  box-shadow: 0 18px 40px rgba(75, 91, 216, 0.16);
+}
+
+.z-card:hover::before { opacity: 1; }
+
+.z-card h3 {
+  font-size: 1.12rem;
+  margin-bottom: 10px;
+  font-weight: 650;
+}
+
+.z-card p {
+  color: var(--z-texto-suave);
+  font-size: 0.96rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.z-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+}
+
+.z-dot-violeta  { background: rgba(108, 92, 231, 0.12); }
+.z-dot-indigo   { background: rgba(75, 91, 216, 0.12); }
+.z-dot-azul     { background: rgba(45, 140, 255, 0.12); }
+.z-dot-turquesa { background: rgba(0, 194, 168, 0.14); }
+.z-dot-naranja  { background: rgba(255, 154, 0, 0.14); }
+.z-dot-rosa     { background: rgba(255, 77, 157, 0.12); }
+
+/* ---------- Líneas de producto ---------- */
+.z-lineas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.z-linea {
+  background: var(--z-superficie);
+  border: 1px solid var(--z-borde);
+  border-left: 4px solid var(--z-violeta);
+  border-radius: var(--z-radio);
+  padding: 28px 26px;
+  box-shadow: var(--z-sombra);
+}
+
+.z-linea:nth-child(2) { border-left-color: var(--z-indigo); }
+.z-linea:nth-child(3) { border-left-color: var(--z-turquesa); }
+
+.z-linea h3 { font-size: 1.18rem; margin-bottom: 6px; }
+
+.z-linea .z-para {
+  display: block;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--z-violeta);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.z-linea ul { list-style: none; padding: 0; margin: 16px 0 0; }
+
+.z-linea li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 9px;
+  color: var(--z-texto-suave);
+  font-size: 0.95rem;
+}
+
+.z-linea li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--z-turquesa);
+}
+
+/* ---------- Planes ---------- */
+.z-planes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.z-plan {
+  background: var(--z-superficie);
+  border: 1px solid var(--z-borde);
+  border-radius: var(--z-radio);
+  padding: 30px 26px;
+  box-shadow: var(--z-sombra);
+  display: flex;
+  flex-direction: column;
+}
+
+.z-plan.destacado {
+  border: 2px solid var(--z-violeta);
+  box-shadow: 0 18px 44px rgba(108, 92, 231, 0.2);
+}
+
+.z-plan-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--z-gradiente);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.z-plan h3 { font-size: 1.3rem; margin-bottom: 6px; }
+
+.z-plan .z-plan-quien {
+  color: var(--z-texto-suave);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.z-plan ul { list-style: none; padding: 0; margin: 0 0 24px; flex-grow: 1; }
+
+.z-plan li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: var(--z-texto-suave);
+}
+
+.z-plan li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--z-turquesa);
+  font-weight: 700;
+}
+
+/* ---------- Roles de marca ---------- */
+.z-roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.z-rol {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: var(--z-radio);
+  padding: 28px 26px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+.z-rol-etiqueta {
+  display: block;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.z-rol:nth-child(1) .z-rol-etiqueta { color: #2563eb; }
+.z-rol:nth-child(2) .z-rol-etiqueta { color: var(--z-indigo); }
+.z-rol:nth-child(3) .z-rol-etiqueta { color: var(--z-violeta); }
+
+.z-rol h3 { font-size: 1.22rem; margin-bottom: 10px; color: #0f172a; }
+.z-rol p { color: #475569; font-size: 0.97rem; line-height: 1.65; margin: 0; }
+
+/* ---------- Franja de cierre / CTA ---------- */
+.z-cta {
+  margin-top: 56px;
+  background: linear-gradient(135deg, #2a2352, #3b327a 55%, #4B5BD8);
+  border-radius: 22px;
+  padding: 52px 44px;
+  color: #fff;
+  text-align: center;
+}
+
+.z-cta h2 { color: #fff !important; margin-bottom: 14px; }
+
+.z-cta p {
+  color: rgba(255, 255, 255, 0.84);
+  max-width: 640px;
+  margin: 0 auto 28px;
+  font-size: 1.05rem;
+}
+
+.z-cta .z-actions { justify-content: center; }
+
+.z-cta .z-btn { background: #fff; color: var(--z-violeta); }
+.z-cta .z-btn:hover { background: #f1efff; color: var(--z-violeta-oscuro); }
+.z-cta .z-btn-ghost { color: #fff; border-color: rgba(255, 255, 255, 0.55); }
+.z-cta .z-btn-ghost:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
+.z-cta .z-nota { color: rgba(255, 255, 255, 0.68); }
+
+/* ---------- FAQ ---------- */
+.z-faq { margin-top: 36px; display: grid; gap: 12px; }
+
+.z-faq details {
+  background: #fff;
+  border: 1px solid var(--z-borde);
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: 0 6px 18px rgba(75, 91, 216, 0.07);
+}
+
+.z-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--z-texto);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.z-faq summary::-webkit-details-marker { display: none; }
+
+.z-faq summary::after {
+  content: "+";
+  color: var(--z-violeta);
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.z-faq details[open] summary::after { content: "–"; }
+
+.z-faq p {
+  margin: 14px 0 0;
+  color: var(--z-texto-suave);
+  font-size: 0.97rem;
+  line-height: 1.7;
+}
+
+/* ---------- Breadcrumb ---------- */
+.z-breadcrumb {
+  font-size: 0.88rem;
+  color: var(--z-texto-suave);
+  padding: 110px 0 0;
+}
+
+.z-breadcrumb a { color: var(--z-indigo); text-decoration: none; }
+.z-breadcrumb a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .z-zone { padding: 64px 0; }
+  .z-cta { padding: 40px 24px; border-radius: 18px; }
+  .z-actions .z-btn,
+  .z-actions .z-btn-ghost { width: 100%; text-align: center; }
+}

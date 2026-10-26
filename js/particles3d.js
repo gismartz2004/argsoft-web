@@ -1,5 +1,5 @@
 // Next-Level Cinematic Neural Network Background with Three.js
-document.addEventListener('DOMContentLoaded', () => {
+function iniciarFondo3D() {
   const container = document.getElementById('canvas3d');
   if (!container) return;
 
@@ -168,4 +168,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   animate();
-});
+}
+
+// Arranque: funciona tanto si el script se carga en el head como si se
+// inyecta bajo demanda despues de DOMContentLoaded.
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', iniciarFondo3D);
+} else {
+  iniciarFondo3D();
+}
