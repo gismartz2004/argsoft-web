@@ -84,6 +84,13 @@
   font-weight: 800;
 }
 
+.z-isotipo {
+  width: 0.82em;
+  height: 0.82em;
+  vertical-align: -0.08em;
+  margin-right: 0.12em;
+}
+
 /* ---------- Botones de producto ---------- */
 .z-btn,
 .z-btn-ghost {

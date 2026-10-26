@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/zentrall.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <script type="application/ld+json">
   {
@@ -141,11 +141,35 @@
 <body>
   <div class="scroll-progress" id="scroll-bar"></div>
 
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-contacts">
+        <a href="tel:+593986789714">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +593 98 678 9714
+        </a>
+        <span class="topbar-sep">·</span>
+        <a href="mailto:gismartoala@argsoft.tech" class="topbar-email">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          gismartoala@argsoft.tech
+        </a>
+      </div>
+      <a class="topbar-agenda" href="https://api.whatsapp.com/send?phone=593986789714&text=Hola,%20quiero%20agendar%20una%20llamada%20con%20Argsoft" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Agendar una llamada
+      </a>
+    </div>
+  </div>
+
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <a href="../" style="text-decoration:none;"><span class="logo-text">ARGSOFT</span></a>
-      </div>
+      <a href="../" class="logo">
+        <svg class="logo-mark" viewBox="0 0 34 34" fill="none">
+          <rect x="2" y="2" width="20" height="20" rx="6" fill="#139cd8" />
+          <rect x="12" y="12" width="20" height="20" rx="6" fill="#5536e0" fill-opacity="0.92" />
+        </svg>
+        <span class="logo-text">ARGSOFT</span>
+      </a>
 
       <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
         <span class="bar"></span>
@@ -159,6 +183,12 @@
           <li><a href="#modulos-detalle">Módulos</a></li>
           <li><a href="#planes">Planes</a></li>
           <li><a href="#preguntas">Preguntas</a></li>
+          <li>
+            <a href="tel:+593986789714" class="nav-phone">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +593 98 678 9714
+            </a>
+          </li>
           <li><a href="https://zentrall.argsoft.tech/registro" class="btn-nav" target="_blank" rel="noopener">Crear cuenta</a></li>
         </ul>
       </nav>
@@ -178,7 +208,7 @@
       <div class="container">
         <span class="z-eyebrow">Sistema de gestión empresarial</span>
         <h2 style="font-size: clamp(2rem, 5vw, 3.1rem);">
-          <span class="z-wordmark">Zentrall</span>: factura ante el SRI, vende y lleva tu contabilidad
+          <img src="../img/zentrall-isotipo.svg" alt="" class="z-isotipo" width="24" height="24" /><span class="z-wordmark">Zentrall</span>: factura ante el SRI, vende y lleva tu contabilidad
           desde un solo sistema
         </h2>
         <p class="z-lead">
