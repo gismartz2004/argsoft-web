@@ -192,6 +192,17 @@ a {
   text-decoration: none;
 }
 
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.logo-mark text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
 .logo-text {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
@@ -287,7 +298,9 @@ a {
 .hero {
   position: relative;
   padding: 72px 0 90px;
-  background: linear-gradient(180deg, var(--bg-soft) 0%, #ffffff 65%);
+  background:
+    radial-gradient(circle, rgba(85, 54, 224, 0.14) 1px, transparent 1.6px) 0 0 / 28px 28px,
+    linear-gradient(180deg, var(--bg-soft) 0%, #ffffff 65%);
   overflow: hidden;
 }
 
@@ -503,7 +516,9 @@ a {
 }
 
 .section.bg-soft {
-  background: var(--bg-soft);
+  background:
+    radial-gradient(circle, rgba(85, 54, 224, 0.1) 1px, transparent 1.6px) 0 0 / 28px 28px,
+    var(--bg-soft);
 }
 
 .section-eyebrow {
@@ -544,7 +559,7 @@ a {
   position: relative;
   border-radius: var(--radio);
   overflow: hidden;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   text-decoration: none;
   box-shadow: var(--sombra-suave);
 }
@@ -559,18 +574,27 @@ a {
   transition: transform 0.4s ease;
 }
 
-.capability-card img.top {
-  object-position: top;
-}
-
-/* Tarjeta sin foto real disponible: panel de color con el icono como
-   protagonista, en vez de forzar una imagen que no representa el servicio. */
+/* Tarjeta sin foto real disponible: ilustración propia de nube y
+   servidores sobre el degradado, en vez de forzar una foto que no
+   representa el servicio. */
 .capability-card.tile {
   background: var(--gradiente);
 }
 
+.capability-illustration {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.capability-card.tile:hover .capability-illustration {
+  transform: scale(1.06);
+}
+
 .capability-card.tile::after {
-  background: linear-gradient(180deg, rgba(18, 18, 43, 0) 0%, rgba(18, 18, 43, 0.3) 100%);
+  background: linear-gradient(180deg, rgba(18, 18, 43, 0) 35%, rgba(18, 18, 43, 0.55) 100%);
 }
 
 .capability-card.tile .capability-icon {
@@ -800,10 +824,44 @@ a {
 .org-rol {
   background: #ffffff;
   border: 1px solid var(--linea);
+  border-top: 3px solid transparent;
   border-radius: var(--radio);
   padding: 30px 26px;
   box-shadow: var(--sombra-suave);
 }
+
+.org-rol:nth-child(1) { border-top-color: var(--celeste); }
+.org-rol:nth-child(2) { border-top-color: var(--morado); }
+.org-rol:nth-child(3) { border-top-color: #c23b84; }
+
+.org-rol-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+}
+
+.org-rol-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.org-rol-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.org-rol:nth-child(1) .org-rol-icon { background: var(--celeste-pale); }
+.org-rol:nth-child(1) .org-rol-icon svg { stroke: var(--celeste-deep); }
+.org-rol:nth-child(2) .org-rol-icon { background: var(--morado-pale); }
+.org-rol:nth-child(2) .org-rol-icon svg { stroke: var(--morado-deep); }
+.org-rol:nth-child(3) .org-rol-icon { background: #fce8f1; }
 
 .org-rol-tag {
   display: block;
@@ -1016,7 +1074,9 @@ a {
    ========================================================================== */
 
 .contact-section {
-  background: var(--bg-soft);
+  background:
+    radial-gradient(circle, rgba(85, 54, 224, 0.1) 1px, transparent 1.6px) 0 0 / 28px 28px,
+    var(--bg-soft);
 }
 
 .contact-content {

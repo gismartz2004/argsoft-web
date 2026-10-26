@@ -154,6 +154,16 @@
   <header class="header">
     <div class="container">
       <a href="#hero" class="logo">
+        <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#139cd8" />
+              <stop offset="1" stop-color="#5536e0" />
+            </linearGradient>
+          </defs>
+          <rect width="36" height="36" rx="10" fill="url(#logoGrad)" />
+          <text x="18" y="23.5" text-anchor="middle" font-size="13.5" letter-spacing="-0.3" fill="#ffffff">arg</text>
+        </svg>
         <span class="logo-text">ARGSOFT</span>
       </a>
 
@@ -229,7 +239,7 @@
             <div class="hero-frame-bar">
               <span></span><span></span><span></span>
             </div>
-            <img src="./img/zentrall-preview-panel.png" alt="Vista previa de la interfaz de Zentrall, prototipo visual del sistema" width="1440" height="1116" />
+            <img src="./img/zentrall-hero.png" alt="Barra de navegación de Zentrall, prototipo visual del sistema" width="300" height="375" />
           </div>
           <div class="hero-float">
             <div class="hero-float-icon">
@@ -249,6 +259,19 @@
       <div class="container">
         <div class="capabilities-grid">
           <a href="#infraestructura" class="capability-card tile">
+            <svg class="capability-illustration" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+              <circle cx="150" cy="140" r="42" fill="#ffffff" fill-opacity="0.92" />
+              <circle cx="206" cy="118" r="58" fill="#ffffff" fill-opacity="0.92" />
+              <circle cx="262" cy="144" r="40" fill="#ffffff" fill-opacity="0.92" />
+              <rect x="138" y="140" width="156" height="54" rx="27" fill="#ffffff" fill-opacity="0.92" />
+              <path d="M150 196V230M206 196V230M262 196V230" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="3 6" />
+              <rect x="100" y="230" width="100" height="80" rx="12" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2" fill="#ffffff" fill-opacity="0.12" />
+              <rect x="212" y="230" width="100" height="80" rx="12" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2" fill="#ffffff" fill-opacity="0.12" />
+              <circle cx="122" cy="254" r="5" fill="#00c2a8" />
+              <circle cx="234" cy="254" r="5" fill="#00c2a8" />
+              <path d="M112 280h60M224 280h60" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" />
+              <path d="M112 294h40M224 294h40" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round" />
+            </svg>
             <div class="capability-body">
               <div class="capability-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
@@ -259,7 +282,7 @@
           </a>
 
           <a href="#zentrall" class="capability-card">
-            <img src="./img/zentrall-preview-landing.png" class="top" alt="Prototipo de la plataforma Zentrall" loading="lazy" />
+            <img src="./img/zentrall-card.png" alt="Prototipo de la plataforma Zentrall" loading="lazy" />
             <div class="capability-body">
               <div class="capability-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
@@ -428,7 +451,7 @@
           <div class="split-media">
             <div class="split-media-shape"></div>
             <div class="split-media-frame">
-              <img src="./img/zentrall-preview-panel.png" alt="Vista previa del panel de Zentrall, prototipo del sistema" loading="lazy" />
+              <img src="./img/zentrall-split.png" alt="Panel de Zentrall con indicadores de la operación, prototipo del sistema" loading="lazy" />
             </div>
             <div class="split-float">
               <div class="split-float-icon">
@@ -523,6 +546,9 @@
 
         <div class="org-roles">
           <article class="org-rol">
+            <div class="org-rol-icon">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+            </div>
             <span class="org-rol-tag">Infraestructura</span>
             <h3>ARGSOFT</h3>
             <p>
@@ -533,6 +559,9 @@
           </article>
 
           <article class="org-rol">
+            <div class="org-rol-icon">
+              <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
             <span class="org-rol-tag">Desarrollo</span>
             <h3>Intuit-EC</h3>
             <p>
@@ -542,6 +571,9 @@
           </article>
 
           <article class="org-rol">
+            <div class="org-rol-icon">
+              <img src="./img/zentrall-isotipo.svg" alt="" width="20" height="20" />
+            </div>
             <span class="org-rol-tag">Producto</span>
             <h3>Zentrall</h3>
             <p>
