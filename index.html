@@ -11,7 +11,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="geo.region" content="EC-G" />
   <meta name="geo.placename" content="Guayaquil, Ecuador" />
-  <meta name="theme-color" content="#5536e0" />
+  <meta name="theme-color" content="#0a1228" />
 
   <link rel="canonical" href="https://argsoft.tech/" />
   <link rel="icon" href="./img/logo-6 (1).png" type="image/png" />
@@ -23,17 +23,17 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://argsoft.tech/" />
   <meta property="og:locale" content="es_EC" />
-  <meta property="og:image" content="https://argsoft.tech/img/imagen-admin.png" />
-  <meta property="og:image:alt" content="Panel administrativo de Zentrall" />
+  <meta property="og:image" content="https://argsoft.tech/img/zentrall-card.png" />
+  <meta property="og:image:alt" content="Zentrall, el sistema de gestión que opera ARGSOFT" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sistema de facturación electrónica y administrativo en Guayaquil | ARGSOFT" />
   <meta name="twitter:description" content="Facturación electrónica SRI, contabilidad, POS e inventario en un solo sistema: Zentrall." />
-  <meta name="twitter:image" content="https://argsoft.tech/img/imagen-admin.png" />
+  <meta name="twitter:image" content="https://argsoft.tech/img/zentrall-card.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/style.css?v=2" />
-  <link rel="stylesheet" href="css/zentrall.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/zentrall.css?v=3" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <script type="application/ld+json">
@@ -69,7 +69,7 @@
         "@type": "ProfessionalService",
         "@id": "https://argsoft.tech/#negocio-local",
         "name": "ARGSOFT",
-        "image": "https://argsoft.tech/img/imagen-admin.png",
+        "image": "https://argsoft.tech/img/zentrall-card.png",
         "url": "https://argsoft.tech/",
         "telephone": "+593986789714",
         "priceRange": "$$",
@@ -139,7 +139,7 @@
         </a>
         <span class="topbar-sep">·</span>
         <a href="mailto:gismartoala@argsoft.tech" class="topbar-email">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" fill="none" stroke="none"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
           gismartoala@argsoft.tech
         </a>
       </div>
@@ -151,7 +151,7 @@
   </div>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="site-header">
     <div class="container">
       <a href="#hero" class="logo">
         <svg class="logo-mark" viewBox="0 0 36 36" fill="none" aria-hidden="true">
@@ -175,9 +175,9 @@
 
       <nav class="nav" id="main-nav" aria-label="Navegación principal">
         <ul>
+          <li><a href="#servicios">Servicios</a></li>
           <li><a href="#zentrall">Zentrall</a></li>
-          <li><a href="#modulos">Sistema</a></li>
-          <li><a href="#infraestructura">Infraestructura</a></li>
+          <li><a href="#proceso">Proceso</a></li>
           <li><a href="#contacto">Contacto</a></li>
           <li>
             <a href="tel:+593986789714" class="nav-phone">
@@ -194,27 +194,26 @@
   <main class="main-content">
 
     <!-- ============ HERO ============ -->
-    <section class="hero fade-section" id="hero">
+    <section class="hero" id="hero">
+      <div class="hero-photo">
+        <img src="./img/equipo1.jpeg" alt="Equipo de ARGSOFT en Guayaquil" width="640" height="640" />
+      </div>
       <div class="container">
         <div class="hero-text">
-          <span class="hero-eyebrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            Soluciones tecnológicas para empresas
-          </span>
-          <h1>Sistemas, plataformas e infraestructura para que tu empresa opere sin fricción</h1>
+          <span class="eyebrow eyebrow--light">Soluciones tecnológicas para empresas</span>
+          <h1>Sistemas, plataformas e <span class="accent--light">infraestructura</span> para que tu empresa opere sin fricción</h1>
           <p>
             ARGSOFT diseña y mantiene la infraestructura empresarial sobre la que corre
-            <strong>Zentrall</strong>: el sistema con el que tu negocio factura con autorización del SRI,
-            administra su contabilidad, vende en punto de venta y controla su inventario desde un solo lugar.
+            <strong>Zentrall</strong>: el sistema con el que tu negocio factura ante el SRI,
+            administra su contabilidad, vende en punto de venta y controla su inventario.
           </p>
 
           <div class="hero-buttons">
             <a href="https://zentrall.argsoft.tech/registro" class="btn-primary" target="_blank" rel="noopener">
               Registrar mi empresa
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a href="#zentrall" class="btn-secondary">
-              Ver el sistema
-            </a>
+            <a href="#zentrall" class="btn-link btn-link--light">Ver el sistema</a>
           </div>
 
           <div class="hero-quickline">
@@ -232,76 +231,155 @@
             </a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="hero-visual">
-          <div class="hero-shape"></div>
-          <div class="hero-frame">
-            <div class="hero-frame-bar">
-              <span></span><span></span><span></span>
-            </div>
-            <img src="./img/zentrall-hero.png" alt="Barra de navegación de Zentrall, prototipo visual del sistema" width="300" height="375" />
+    <!-- ============ CINTA DE SERVICIOS ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Facturación electrónica SRI</span>
+          <span class="marquee-item">Contabilidad</span>
+          <span class="marquee-item">Punto de venta</span>
+          <span class="marquee-item">Inventario</span>
+          <span class="marquee-item">Compras</span>
+          <span class="marquee-item">Caja y cobros</span>
+          <span class="marquee-item">Tienda en línea</span>
+          <span class="marquee-item">Infraestructura en la nube</span>
+        </div>
+        <div class="marquee-group">
+          <span class="marquee-item">Facturación electrónica SRI</span>
+          <span class="marquee-item">Contabilidad</span>
+          <span class="marquee-item">Punto de venta</span>
+          <span class="marquee-item">Inventario</span>
+          <span class="marquee-item">Compras</span>
+          <span class="marquee-item">Caja y cobros</span>
+          <span class="marquee-item">Tienda en línea</span>
+          <span class="marquee-item">Infraestructura en la nube</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section fade-section" id="servicios">
+      <div class="container">
+        <div class="section-head con-accion">
+          <div class="section-head-texto">
+            <span class="watermark">SERVICIOS</span>
+            <span class="eyebrow">Lo que hacemos</span>
+            <h2>Servicios que sostienen <br /><span class="accent">la operación de tu empresa</span></h2>
           </div>
-          <div class="hero-float">
-            <div class="hero-float-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <a href="#contacto" class="btn-secondary">
+            Conversar con nosotros
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="tech-grid">
+          <article class="tech-card">
+            <div class="tech-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>
             </div>
-            <div>
-              <strong>Hablamos en español</strong>
-              <span>Soporte desde Guayaquil</span>
+            <h3>Facturación electrónica SRI</h3>
+            <p>Emisión, autorización, reintentos, XML y RIDE. El cumplimiento tributario ecuatoriano integrado en el flujo de venta.</p>
+            <a href="./zentrall/#modulos-detalle" class="btn-link">Conocer más</a>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
             </div>
-          </div>
+            <h3>Sistemas de gestión</h3>
+            <p>Contabilidad, punto de venta, inventario, compras y caja sobre una misma base de datos, sin doble digitación.</p>
+            <a href="#zentrall" class="btn-link">Conocer más</a>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>Infraestructura y nube</h3>
+            <p>Servidores, despliegue, monitoreo, respaldos y continuidad operativa, con responsabilidad sobre el tiempo en línea.</p>
+            <a href="#nosotros" class="btn-link">Conocer más</a>
+          </article>
+
+          <article class="tech-card">
+            <div class="tech-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3>Soporte y acompañamiento</h3>
+            <p>Implementación, migración de tu información, capacitación a tu equipo y soporte continuo en español desde Guayaquil.</p>
+            <a href="#proceso" class="btn-link">Conocer más</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ CAPACIDADES ============ -->
-    <section class="section fade-section" style="padding-top: 40px;">
+    <!-- ============ NOSOTROS ============ -->
+    <section class="section bg-soft fade-section" id="nosotros">
       <div class="container">
-        <div class="capabilities-grid">
-          <a href="#infraestructura" class="capability-card tile">
-            <svg class="capability-illustration" viewBox="0 0 400 400" fill="none" aria-hidden="true">
-              <circle cx="150" cy="140" r="42" fill="#ffffff" fill-opacity="0.92" />
-              <circle cx="206" cy="118" r="58" fill="#ffffff" fill-opacity="0.92" />
-              <circle cx="262" cy="144" r="40" fill="#ffffff" fill-opacity="0.92" />
-              <rect x="138" y="140" width="156" height="54" rx="27" fill="#ffffff" fill-opacity="0.92" />
-              <path d="M150 196V230M206 196V230M262 196V230" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2" stroke-dasharray="3 6" />
-              <rect x="100" y="230" width="100" height="80" rx="12" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2" fill="#ffffff" fill-opacity="0.12" />
-              <rect x="212" y="230" width="100" height="80" rx="12" stroke="#ffffff" stroke-opacity="0.6" stroke-width="2" fill="#ffffff" fill-opacity="0.12" />
-              <circle cx="122" cy="254" r="5" fill="#00c2a8" />
-              <circle cx="234" cy="254" r="5" fill="#00c2a8" />
-              <path d="M112 280h60M224 280h60" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" />
-              <path d="M112 294h40M224 294h40" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round" />
-            </svg>
-            <div class="capability-body">
-              <div class="capability-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
-              </div>
-              <h3>Infraestructura y nube</h3>
-              <p>Servidores, respaldos y disponibilidad para que tu sistema no se caiga.</p>
+        <div class="about">
+          <div class="about-media">
+            <div class="about-collage">
+              <figure>
+                <img src="./img/zentrall-card.png" alt="Prototipo de la plataforma Zentrall" loading="lazy" width="680" height="680" />
+              </figure>
+              <figure>
+                <img src="./img/zentrall-split.png" alt="Panel de Zentrall con indicadores de la operación" loading="lazy" width="1170" height="732" />
+              </figure>
+              <figure>
+                <img src="./img/zentrall-hero.png" alt="Navegación por módulos dentro de Zentrall" loading="lazy" width="300" height="375" />
+              </figure>
             </div>
-          </a>
 
-          <a href="#zentrall" class="capability-card">
-            <img src="./img/zentrall-card.png" alt="Prototipo de la plataforma Zentrall" loading="lazy" />
-            <div class="capability-body">
-              <div class="capability-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
-              </div>
-              <h3>Zentrall: tu sistema de gestión</h3>
-              <p>Facturación SRI, contabilidad, POS e inventario en una sola plataforma.</p>
-            </div>
-          </a>
+            <svg class="sparkle sparkle--1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.3 5.1 10.8 12 12-6.9 1.2-11.4 5.7-12 12-.6-6.3-5.1-10.8-12-12C6.9 10.8 11.4 6.3 12 0z"/></svg>
+            <svg class="sparkle sparkle--2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c.6 6.3 5.1 10.8 12 12-6.9 1.2-11.4 5.7-12 12-.6-6.3-5.1-10.8-12-12C6.9 10.8 11.4 6.3 12 0z"/></svg>
 
-          <a href="#contacto" class="capability-card">
-            <img src="./img/equipo1.jpeg" alt="Equipo de acompañamiento técnico de ARGSOFT" loading="lazy" />
-            <div class="capability-body">
-              <div class="capability-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-              </div>
-              <h3>Acompañamiento técnico</h3>
-              <p>Implementación, migración de datos y soporte continuo en español.</p>
+            <a class="badge-rotate" href="#contacto" aria-label="Hablemos de tu proyecto">
+              <svg viewBox="0 0 108 108" aria-hidden="true">
+                <defs>
+                  <path id="badgeCircle" d="M54,54 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0" />
+                </defs>
+                <text>
+                  <textPath href="#badgeCircle">HABLEMOS · DE TU PROYECTO · </textPath>
+                </text>
+              </svg>
+              <svg class="badge-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+
+          <div class="about-content">
+            <div class="section-head">
+              <span class="watermark">NOSOTROS</span>
+              <span class="eyebrow">Sobre ARGSOFT</span>
+              <h2>Tecnología que sostiene <span class="accent">negocios reales</span></h2>
+              <p class="section-subtitle">
+                Somos una empresa de infraestructura y plataforma empresarial en Guayaquil. No entregamos
+                un proyecto y desaparecemos: operamos el sistema con el que tu empresa factura y lleva sus
+                cuentas, todos los días.
+              </p>
             </div>
-          </a>
+
+            <div class="stats-row">
+              <div class="stat">
+                <span class="stat-num" data-count="19">0</span>
+                <span class="stat-label">Módulos del sistema</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="3">0</span>
+                <span class="stat-label">Líneas de producto</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="100" data-suffix="%">0</span>
+                <span class="stat-label">En español</span>
+              </div>
+            </div>
+
+            <a href="#zentrall" class="btn-primary">
+              Conocer la plataforma
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -315,46 +393,57 @@
           Zentrall nació para un problema concreto: en Ecuador un negocio necesita facturar electrónicamente
           ante el SRI, controlar lo que vende y entregarle cuentas claras a su contador — y normalmente eso
           significa tres sistemas distintos que no se hablan entre sí. Zentrall lo resuelve en una sola
-          plataforma, pensada para que el dueño del negocio la use sin saber contabilidad y para que el
-          contador encuentre el rigor que necesita.
+          plataforma.
         </p>
 
-        <div class="z-lineas">
-          <article class="z-linea">
-            <h3>Zentrall</h3>
-            <span class="z-para">Comercios y emprendedores</span>
-            <p>Para quien vende todos los días y quiere control sin complicarse con vocabulario contable.</p>
-            <ul>
-              <li>Punto de venta (POS) ágil</li>
-              <li>Tienda en línea propia</li>
-              <li>Marketplace para que te encuentren</li>
-              <li>Inventario y stock al día</li>
-            </ul>
-          </article>
+        <div class="tabs">
+          <div class="tabs-list" role="tablist" aria-label="Líneas de producto de Zentrall">
+            <button class="tab-btn" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">Zentrall</button>
+            <button class="tab-btn" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Zentrall Business</button>
+            <button class="tab-btn" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">Zentrall Professional</button>
+          </div>
 
-          <article class="z-linea">
-            <h3>Zentrall Business</h3>
-            <span class="z-para">Empresas y departamentos administrativos</span>
-            <p>El lado administrativo completo, con el rigor que espera un contador o un área financiera.</p>
-            <ul>
-              <li>Contabilidad y plan de cuentas</li>
-              <li>Facturación electrónica SRI</li>
-              <li>Compras y proveedores</li>
-              <li>Caja, cobros y cierres de período</li>
+          <div class="tab-panel activo" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+            <div>
+              <span class="tab-para">Comercios y emprendedores</span>
+              <h3>Para quien vende todos los días</h3>
+              <p>Control de tu negocio sin tener que aprender vocabulario contable. Flujos guiados, lenguaje simple y lo esencial a la mano.</p>
+            </div>
+            <ul class="tab-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Punto de venta (POS) ágil</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tienda en línea propia</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Marketplace para que te encuentren</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Inventario y stock al día</li>
             </ul>
-          </article>
+          </div>
 
-          <article class="z-linea">
-            <h3>Zentrall Professional</h3>
-            <span class="z-para">Profesionales y personas naturales</span>
-            <p>Para quien factura por servicios y necesita estar al día con sus obligaciones tributarias.</p>
-            <ul>
-              <li>Emisión de comprobantes electrónicos</li>
-              <li>Retenciones y respaldo tributario</li>
-              <li>Clientes y cobros</li>
-              <li>Reportes para la declaración</li>
+          <div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+            <div>
+              <span class="tab-para">Empresas y departamentos administrativos</span>
+              <h3>El lado administrativo completo</h3>
+              <p>Con el rigor que espera un contador o un área financiera, sobre los mismos datos que genera la operación diaria.</p>
+            </div>
+            <ul class="tab-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Contabilidad y plan de cuentas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Facturación electrónica SRI</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Compras y proveedores</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Caja, cobros y cierres de período</li>
             </ul>
-          </article>
+          </div>
+
+          <div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+            <div>
+              <span class="tab-para">Profesionales y personas naturales</span>
+              <h3>Para quien factura por servicios</h3>
+              <p>Lo necesario para estar al día con tus obligaciones tributarias, sin montar un ERP completo.</p>
+            </div>
+            <ul class="tab-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Emisión de comprobantes electrónicos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Retenciones y respaldo tributario</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Clientes y cobros</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Reportes para la declaración</li>
+            </ul>
+          </div>
         </div>
 
         <p class="z-nota">
@@ -381,49 +470,65 @@
 
         <div class="z-grid">
           <article class="z-card">
-            <div class="z-dot z-dot-violeta">🧾</div>
+            <div class="z-dot z-dot-violeta">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h4"/></svg>
+            </div>
             <h3>Facturación electrónica SRI</h3>
             <p>Emisión, autorización, reintentos automáticos, XML y RIDE. El cumplimiento tributario ecuatoriano está integrado en el flujo de venta, no es un complemento aparte.</p>
           </article>
 
           <article class="z-card">
-            <div class="z-dot z-dot-indigo">📊</div>
+            <div class="z-dot z-dot-indigo">
+              <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
             <h3>Contabilidad</h3>
             <p>Plan de cuentas, asientos automáticos desde las operaciones, asientos manuales auditados y cierres de período. Tu contador trabaja sobre datos reales, no sobre un Excel.</p>
           </article>
 
           <article class="z-card">
-            <div class="z-dot z-dot-azul">🛒</div>
+            <div class="z-dot z-dot-azul">
+              <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+            </div>
             <h3>Punto de venta (POS)</h3>
             <p>Venta rápida en mostrador, mesas y comandas para restaurantes, balanza para productos por peso, división de cuentas y pedidos para llevar o delivery.</p>
           </article>
 
           <article class="z-card">
-            <div class="z-dot z-dot-turquesa">📦</div>
+            <div class="z-dot z-dot-turquesa">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7L12 12l8.7-5M12 22V12"/></svg>
+            </div>
             <h3>Inventario y stock</h3>
             <p>Control de existencias, movimientos trazables, ajustes justificados y descuento automático de stock en cada venta.</p>
           </article>
 
           <article class="z-card">
-            <div class="z-dot z-dot-naranja">🚚</div>
+            <div class="z-dot z-dot-naranja">
+              <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
             <h3>Compras y proveedores</h3>
             <p>Registro de compras, comprobantes de proveedores y su efecto contable e inventario, sin doble digitación.</p>
           </article>
 
           <article class="z-card">
-            <div class="z-dot z-dot-rosa">💵</div>
+            <div class="z-dot z-dot-rosa">
+              <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg>
+            </div>
             <h3>Caja, cobros y cartera</h3>
             <p>Apertura y cierre de caja, arqueo declarado, retiros y depósitos, cobros a clientes y seguimiento de cuentas por cobrar.</p>
           </article>
 
           <article class="z-card">
-            <div class="z-dot z-dot-violeta">🏪</div>
+            <div class="z-dot z-dot-violeta">
+              <svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/><path d="M8 9v3a4 4 0 0 0 8 0V9"/></svg>
+            </div>
             <h3>Tienda en línea y marketplace</h3>
             <p>Tu negocio tiene su página pública de productos y aparece en un marketplace comunitario donde los clientes pueden descubrirte.</p>
           </article>
 
           <article class="z-card">
-            <div class="z-dot z-dot-indigo">📈</div>
+            <div class="z-dot z-dot-indigo">
+              <svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l3.5-4 3 2.5L20 7"/></svg>
+            </div>
             <h3>Reportes y control</h3>
             <p>Ventas, márgenes, estado tributario y registro de auditoría de las operaciones sensibles. Para decidir con datos, no con intuición.</p>
           </article>
@@ -444,8 +549,60 @@
       </div>
     </section>
 
-    <!-- ============ RESUELVE TU OPERACIÓN COMPLETA ============ -->
-    <section class="section fade-section bg-soft">
+    <!-- ============ PROCESO ============ -->
+    <section class="section fade-section" id="proceso">
+      <div class="container">
+        <div class="section-head centrado">
+          <span class="watermark">PROCESO</span>
+          <span class="eyebrow">Cómo trabajamos</span>
+          <h2>De la primera conversación <span class="accent">a tu primera factura</span></h2>
+          <p class="section-subtitle">
+            Un camino claro, sin sorpresas y con alguien respondiéndote en cada paso.
+          </p>
+        </div>
+
+        <div class="process">
+          <article class="process-step">
+            <div class="process-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+              <span class="process-num">01</span>
+            </div>
+            <h3>Diagnóstico</h3>
+            <p>Escuchamos cómo opera tu negocio hoy y definimos qué módulos necesitas realmente.</p>
+          </article>
+
+          <article class="process-step">
+            <div class="process-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3"/><path d="M1 14h6M9 8h6M17 16h6"/></svg>
+              <span class="process-num">02</span>
+            </div>
+            <h3>Configuración</h3>
+            <p>Preparamos Zentrall con tus datos tributarios, tu catálogo, tus usuarios y sus permisos.</p>
+          </article>
+
+          <article class="process-step">
+            <div class="process-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+              <span class="process-num">03</span>
+            </div>
+            <h3>Migración</h3>
+            <p>Llevamos tu información actual al sistema para que no tengas que empezar desde cero.</p>
+          </article>
+
+          <article class="process-step">
+            <div class="process-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+              <span class="process-num">04</span>
+            </div>
+            <h3>Acompañamiento</h3>
+            <p>Capacitamos a tu equipo y seguimos disponibles con soporte continuo en español.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ ARGSOFT ============ -->
+    <section class="section bg-soft fade-section" id="por-que">
       <div class="container">
         <div class="split reverse">
           <div class="split-media">
@@ -465,12 +622,14 @@
           </div>
 
           <div class="split-content">
-            <span class="section-eyebrow">Por qué ARGSOFT</span>
-            <h2>Resolvemos la operación completa, no solo un sistema suelto</h2>
-            <p>
-              No te vendemos un facturador aislado. Ponemos la infraestructura, el sistema y el acompañamiento
-              para que la facturación, el inventario y la contabilidad de tu empresa funcionen como una sola cosa.
-            </p>
+            <div class="section-head">
+              <span class="eyebrow">Por qué ARGSOFT</span>
+              <h2>Resolvemos la operación completa, <span class="accent">no un sistema suelto</span></h2>
+              <p class="section-subtitle">
+                No te vendemos un facturador aislado. Ponemos la infraestructura, el sistema y el
+                acompañamiento para que todo funcione como una sola cosa.
+              </p>
+            </div>
             <ul class="split-list">
               <li>
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
@@ -489,7 +648,10 @@
                 <span><strong>Acompañamiento directo:</strong> implementación y soporte en español, sin mesas de ayuda genéricas.</span>
               </li>
             </ul>
-            <a href="https://zentrall.argsoft.tech/registro" class="btn-primary" target="_blank" rel="noopener">Registrar mi empresa</a>
+            <a href="https://zentrall.argsoft.tech/registro" class="btn-primary" target="_blank" rel="noopener">
+              Registrar mi empresa
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
           </div>
         </div>
 
@@ -534,15 +696,18 @@
       </div>
     </section>
 
-    <!-- ============ CÓMO TRABAJAMOS: LAS TRES MARCAS ============ -->
+    <!-- ============ ROLES ============ -->
     <section class="section fade-section" id="como-trabajamos">
       <div class="container">
-        <span class="section-eyebrow">Cómo trabajamos</span>
-        <h2>Tres roles, un solo responsable frente a ti</h2>
-        <p class="section-subtitle">
-          Detrás de Zentrall hay una estructura clara. Saber quién hace qué es parte de la garantía
-          que te damos.
-        </p>
+        <div class="section-head centrado">
+          <span class="watermark">ESTRUCTURA</span>
+          <span class="eyebrow">Quién hace qué</span>
+          <h2>Tres roles, <span class="accent">un solo responsable frente a ti</span></h2>
+          <p class="section-subtitle">
+            Detrás de Zentrall hay una estructura clara. Saber quién hace qué es parte de la garantía
+            que te damos.
+          </p>
+        </div>
 
         <div class="org-roles">
           <article class="org-rol">
@@ -553,8 +718,8 @@
             <h3>ARGSOFT</h3>
             <p>
               Somos la capa empresarial: servidores, nube, bases de datos aisladas por empresa, respaldos,
-              seguridad, disponibilidad y soporte. ARGSOFT no es una agencia que entrega un proyecto y se va:
-              es la compañía que mantiene tu sistema funcionando todos los días.
+              seguridad, disponibilidad y soporte. Es la compañía que mantiene tu sistema funcionando
+              todos los días.
             </p>
           </article>
 
@@ -572,7 +737,7 @@
 
           <article class="org-rol">
             <div class="org-rol-icon">
-              <img src="./img/zentrall-isotipo.svg" alt="" width="20" height="20" />
+              <img src="./img/zentrall-isotipo.svg" alt="" width="21" height="21" />
             </div>
             <span class="org-rol-tag">Producto</span>
             <h3>Zentrall</h3>
@@ -585,55 +750,43 @@
       </div>
     </section>
 
-    <!-- ============ INFRAESTRUCTURA (SERVICIO ARGSOFT) ============ -->
-    <section id="infraestructura" class="section fade-section bg-soft">
-      <div class="container">
-        <span class="section-eyebrow">Infraestructura</span>
-        <h2>La plataforma empresarial que sostiene tu sistema</h2>
-        <p class="section-subtitle">
-          Además de Zentrall, ARGSOFT opera la infraestructura de empresas que necesitan que su
-          tecnología no se caiga.
-        </p>
-
-        <div class="tech-grid">
-          <div class="tech-card">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-            </div>
-            <h3>Nube y servidores gestionados</h3>
-            <p>Despliegue, monitoreo, respaldos y continuidad operativa de tus sistemas críticos, con responsabilidad sobre el tiempo en línea.</p>
-          </div>
-          <div class="tech-card">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Aislamiento y seguridad de datos</h3>
-            <p>Arquitectura multiempresa con separación real de información, control de accesos por usuario y registro de auditoría de operaciones sensibles.</p>
-          </div>
-          <div class="tech-card">
-            <div class="tech-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-            </div>
-            <h3>Soporte y acompañamiento</h3>
-            <p>Implementación, migración de tu información, capacitación a tu equipo y soporte continuo en español desde Guayaquil.</p>
-          </div>
+    <!-- ============ CINTA 2 ============ -->
+    <div class="marquee marquee--navy" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Guayaquil</span>
+          <span class="marquee-item">Soporte en español</span>
+          <span class="marquee-item">Multiempresa</span>
+          <span class="marquee-item">Cumplimiento SRI</span>
+          <span class="marquee-item">Infraestructura administrada</span>
+          <span class="marquee-item">Sin instalación</span>
+        </div>
+        <div class="marquee-group">
+          <span class="marquee-item">Guayaquil</span>
+          <span class="marquee-item">Soporte en español</span>
+          <span class="marquee-item">Multiempresa</span>
+          <span class="marquee-item">Cumplimiento SRI</span>
+          <span class="marquee-item">Infraestructura administrada</span>
+          <span class="marquee-item">Sin instalación</span>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- ============ CTA: AGENDAR / LLAMAR ============ -->
+    <!-- ============ CTA ============ -->
     <section class="cta-band fade-section">
       <div class="container">
         <div>
-          <h2>Hablemos de lo que necesita tu empresa</h2>
+          <span class="eyebrow eyebrow--light">Hablemos</span>
+          <h2>Agenda una llamada y cuéntanos qué necesita tu empresa</h2>
           <p>
-            Agenda una llamada de 20 minutos y te mostramos cómo Zentrall y la infraestructura de ARGSOFT
-            pueden resolver tu facturación, tu inventario y tu contabilidad.
+            20 minutos para entender tu operación y mostrarte cómo Zentrall y la infraestructura de
+            ARGSOFT resuelven tu facturación, tu inventario y tu contabilidad.
           </p>
         </div>
         <div class="cta-band-actions">
           <a href="https://api.whatsapp.com/send?phone=593986789714&text=Hola,%20quiero%20agendar%20una%20llamada%20con%20Argsoft" class="btn-primary btn-large" target="_blank" rel="noopener">
             Agendar una llamada
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </a>
           <a href="mailto:gismartoala@argsoft.tech?subject=Quiero%20agendar%20una%20llamada" class="btn-secondary btn-large">
             Escribir por correo
@@ -649,14 +802,15 @@
     <!-- ============ ALIADOS ============ -->
     <section id="aliados" class="section fade-section">
       <div class="container">
-        <span class="section-eyebrow">Aliados</span>
-        <h2>Aliados que confían en ARGSOFT</h2>
-        <p class="section-subtitle">Instituciones y organizaciones con las que trabajamos.</p>
+        <div class="section-head centrado">
+          <span class="eyebrow">Aliados</span>
+          <h2>Organizaciones que <span class="accent">confían en ARGSOFT</span></h2>
+        </div>
 
         <div class="aliados-grid">
           <div class="aliado-card">
             <div class="aliado-logo">
-              <img src="./img/fundacionpro.png" alt="Logo de Fundación Provida, aliada de ARGSOFT" width="76" height="76" loading="lazy" />
+              <img src="./img/fundacionpro.png" alt="Logo de Fundación Provida, aliada de ARGSOFT" width="78" height="78" loading="lazy" />
             </div>
             <h4>Fundación Provida</h4>
             <p>Aliada en proyectos que combinan tecnología, impacto social y nuevas formas de innovación.</p>
@@ -664,7 +818,7 @@
 
           <div class="aliado-card">
             <div class="aliado-logo">
-              <img src="./img/logo-6 (1).png" alt="Logo del Centro de Innovación Tecnológica Genios Bot" width="76" height="76" loading="lazy" />
+              <img src="./img/logo-6 (1).png" alt="Logo del Centro de Innovación Tecnológica Genios Bot" width="78" height="78" loading="lazy" />
             </div>
             <h4>Centro de Innovación tecnológica Genios Bot</h4>
             <p>Partner que impulsa ideas con enfoque en tecnología, desarrollo y soluciones digitales.</p>
@@ -672,7 +826,7 @@
 
           <div class="aliado-card">
             <div class="aliado-logo">
-              <img src="./img/Logo-120-por-120.webp" alt="Logo de la Unidad Educativa Sathya Sai de Guayaquil" width="76" height="76" loading="lazy" />
+              <img src="./img/Logo-120-por-120.webp" alt="Logo de la Unidad Educativa Sathya Sai de Guayaquil" width="78" height="78" loading="lazy" />
             </div>
             <h4>Unidad Educativa Sathya Sai de Guayaquil</h4>
             <p>Aliado que valida nuestras propuestas con una visión inspirada en el futuro y la educación.</p>
@@ -685,7 +839,7 @@
     <section id="contacto" class="section fade-section contact-section">
       <div class="container">
         <div class="contact-content">
-          <span class="section-eyebrow">Contacto</span>
+          <span class="eyebrow" style="justify-content:center;">Contacto</span>
           <h2>¿Conversamos sobre tu empresa?</h2>
           <p class="contact-subtitle">
             Cuéntanos qué necesita tu negocio — facturación electrónica, contabilidad, punto de venta o
@@ -742,10 +896,10 @@
         <div class="footer-section">
           <h4>ARGSOFT</h4>
           <ul>
-            <li><a href="#infraestructura">Infraestructura</a></li>
-            <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proceso">Proceso</a></li>
             <li><a href="#aliados">Aliados</a></li>
-            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -761,7 +915,11 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
+  <button class="to-top" id="to-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/main.js?v=3" defer></script>
 </body>
 
 </html>

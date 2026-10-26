@@ -193,13 +193,31 @@
 }
 
 .z-dot {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
   display: grid;
   place-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  /* Hay z-dot con número (los pasos) además de los que llevan icono. */
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--z-violeta);
+  transition: transform .2s ease;
+}
+
+.z-card:hover .z-dot {
+  transform: rotate(-8deg) scale(1.06);
+}
+
+.z-dot svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .z-dot-violeta  { background: rgba(108, 92, 231, 0.12); }
@@ -208,6 +226,13 @@
 .z-dot-turquesa { background: rgba(0, 194, 168, 0.14); }
 .z-dot-naranja  { background: rgba(255, 154, 0, 0.14); }
 .z-dot-rosa     { background: rgba(255, 77, 157, 0.12); }
+
+.z-dot-violeta svg  { stroke: var(--z-violeta); }
+.z-dot-indigo svg   { stroke: var(--z-indigo); }
+.z-dot-azul svg     { stroke: var(--z-azul); }
+.z-dot-turquesa svg { stroke: #009e89; }
+.z-dot-naranja svg  { stroke: #d07f00; }
+.z-dot-rosa svg     { stroke: #e03a85; }
 
 /* ---------- Líneas de producto ---------- */
 .z-lineas {
